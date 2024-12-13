@@ -23,7 +23,7 @@
 ## Getting Started
 
 ### Online Access
-Check out the tool here: [Human-Friendly JSON Formatter](#)
+Check out the tool here: [Human-Friendly JSON Formatter](https://mettamatt.github.io/human-friendly-json/)
 
 ### Local Setup
 1. Clone this repository:
