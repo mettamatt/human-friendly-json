@@ -1,0 +1,136 @@
+/* Apply border-box sizing to all elements for easier layout maintenance */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f7f7f7;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main {
+  margin: auto;
+  max-width: 800px;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0064a3;
+}
+
+/* Clear focus styles for better keyboard accessibility */
+button:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+/* Error message styling for visibility */
+.error {
+  color: #d8000c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold; /* Slight emphasis for error messages */
+  background-color: #f9dcdc; /* Light red background to make errors stand out */
+  padding: 5px;
+  border-radius: 4px;
+  display: block; /* Ensure it displays normally when content is present */
+}
+
+/* Hide the error message area when empty */
+.error:empty {
+  display: none; /* Collapse the error box completely */
+}
+
+/* Info message styling */
+.info {
+  color: #007acc;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Styling for highlighted error lines in CodeMirror */
+.error-line {
+  background-color: #fee !important; /* Soft red for readability */
+}
+
+/* Input and output sections should match in style */
+.CodeMirror {
+  border: 1px solid #ddd; /* Light border for both input and output editors */
+  border-radius: 4px; /* Rounded corners for consistency */
+  padding: 5px; /* Extra spacing inside editors */
+  font-size: 14px; /* Adjust for readability */
+  background: #fafafa; /* Light grey to differentiate from plain white */
+}
+
+/* Input editor specific styles (if needed for distinction) */
+#jsonEditor .CodeMirror {
+  min-height: 200px; /* Ensure enough space for input */
+}
+
+/* Output editor specific styles */
+#jsonOutputEditor .CodeMirror {
+  min-height: 150px; /* Ensure enough space for output */
+}
+
+/* Actions section (e.g., Copy JSON button) */
+.actions {
+  margin-top: 10px;
+  display: flex; /* Flexbox for button alignment */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
